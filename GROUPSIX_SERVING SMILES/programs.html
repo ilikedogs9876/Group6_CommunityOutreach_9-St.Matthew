@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serving Smiles: Canteen Workers Appreciation Day</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-image: url('picture community.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(20, 20, 20, 0.6);
+            z-index: 0;
+        }
+
+        body > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: linear-gradient(90deg, #004AAD, #007BFF);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+            font-size: 21px;
+            padding: 5px;
+            transition: 0.4s ease;
+        }
+
+        section {
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: center;
+            color: #222;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            color: #004AAD;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(90deg, #222, #444);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Serving Smiles: Canteen Workers Appreciation Day</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Programs</h2>
+        <p>We organized a special event to show our appreciation to the hardworking canteen workers. Through fun games and team-building activities, we made sure they felt valued and celebrated for their dedication. In addition to the games, we provided delicious meals to nourish them and show our gratitude. It was a heartwarming day that allowed us to give back to those who serve us so well.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Outreach Program Serving Smiles</p>
+    </footer>
+</body>
+</html>
